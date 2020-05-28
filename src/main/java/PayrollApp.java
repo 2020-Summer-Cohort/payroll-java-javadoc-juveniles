@@ -16,3 +16,7 @@ public class PayrollApp {
 
     }
 }
+//    Stretch Tasks
+//    Give the user the option to not deduct insurance fees from insured employees
+//    Give the user the option to not distribute a bonus DONE
+//    Give the user the option to apply hazard pay, doubling the paycheckTotal for PayrollHourly DONE
