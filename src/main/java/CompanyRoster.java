@@ -32,12 +32,16 @@ public class CompanyRoster {
         }
     }
 
-    public void addEmployee(PayrollEmployee employees) {
-        allEmployees.add(employees);
-
+    public void displayPayroll (){
+        System.out.println( "First Name\t Last Name\tPay Amount");
+        for (PayrollEmployee employee:allEmployees) {
+            System.out.println( "\t"+ employee.getFirstName() +"\t\t"+ employee.getLastName() + "\t\t" + employee.getPaycheckTotal());
+        }
     }
 
-    public double calculatePay() {
+
+
+    public void calculatePay() {
         double paycheckTotal = 0;
         Scanner scanner = new Scanner(System.in);
 
@@ -65,8 +69,10 @@ public class CompanyRoster {
 
 
             }
+            employee.setPaycheckTotal(paycheckTotal);
         }
-        return paycheckTotal;
+
+
     }
 
 

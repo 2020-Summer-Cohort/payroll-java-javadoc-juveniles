@@ -8,7 +8,10 @@ public class PayrollApp {
         allEmployees.addInitialEmployees();
         allEmployees.displayEmployees();
 
+
         allEmployees.calculatePay();
+
+        allEmployees.displayPayroll();
 
 
     }
